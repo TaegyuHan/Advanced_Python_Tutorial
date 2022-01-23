@@ -4,10 +4,10 @@ from abc import ABCMeta, abstractstaticmethod # 추상 메소드 사용하기
 # 인터페이스 클래스는 I대문자를 붙여준다.
 # meta=ABCMeta 인스턴스를 생성 못하게 한다.
 class IPerson(metaclass=ABCMeta):
-
+    """ Person 추상 클래스 """
     @abstractstaticmethod
     def person_method():
-        """ Interface Method """
+        """ 추상 Method """
 
 class Student(IPerson):
 
